@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width: 300px;
+            height: 300px;
+            border: 5px solid black;
+            margin: 100px;
+        }
+        .div{
+            width: 300px;
+            height: 300px;
+            background-color: royalblue;
+            transform: rotate(60deg);
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: royalblue;
+            transform: translateY(150px)
+        }
+        .img{
+            transform: scale(2.0, 2.0)
+        }
+        .skew{
+            transform: skew(45deg, 15deg);
+        }
+        .rotate{
+            transform: rotate(60deg)
+        }
+        .mix{
+            transform: rotate(60deg) scale(1.2) skewY(10deg)
+        }
+        .translate{
+            /* border: 1px solid black; */
+            transform: translate3d(100px, 300px, 50px);
+        }
+        .translatex{
+            /* border: 1px solid black; */
+            transform: translateX(350px);
+        }
+        .translatey{
+            /* border: 1px solid black; */
+            transform: translateY(100px);
+        }
+        .translatez{
+            /* border: 1px solid black; */
+            transform: translateZ(100px);
+        }
+        .scale3d{
+            /* border: 1px solid black; */
+            transform: scale3d(2, 4, 6);
+        }
+        .rotate3d{
+            /* border: 1px solid black; */
+            transform: rotate3d(2, 3, 4, 45deg);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="div"></div>
+    </section>
+    <div class="box"></div>
+
+    <div style="margin-left: 500px;">
+        <img src="../img/car.jpeg" alt="">
+    </div>
+    <div class="img" style="margin-left: 1200px;">
+        <img src="../img/car.jpeg" alt="">
+    </div>
+    <div class="skew" style="margin-left: 500px;">
+        <img src="../img/car.jpeg" alt="">
+    </div>
+    <div class="rotate" style="margin-left: 500px;">
+        <img src="../img/car.jpeg" alt="">
+    </div>
+    <div class="mix" style="margin-left: 500px;">
+        <img src="../img/car.jpeg" alt="">
+    </div>
+    <div class="translate" style="margin-left: 500px;">
+        <img src="../img/car.jpeg" alt="">
+    </div>
+    <div class="translatex" style="margin-left: 500px;">
+        <img src="../img/car.jpeg" alt="">
+    </div>
+    <div class="translatey" style="margin-left: 500px;">
+        <img src="../img/car.jpeg" alt="">
+    </div>
+    <div class="translatez" style="margin-left: 500px;">
+        <img src="../img/car.jpeg" alt="">
+    </div>
+    <div class="scale3d" style="margin-left: 500px;">
+        <img src="../img/car.jpeg" alt="">
+    </div>
+    <div class="rotate3d" style="margin-left: 500px;">
+        <img src="../img/car.jpeg" alt="">
+    </div>
+</body>
+</html>
