@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 입력 양식 태그</title>
+</head>
+<body>
+    <form>
+        <label for="q_question">질문검색</label>
+            <input type="text" name="search">
+            <input type="submit" value="검색">
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>사용자 정보 입력</legend>
+            <label for="user1">성명</label>
+            <input type="text" name="name1">
+        </fieldset>
+
+        <fieldset>
+            <legend>배송 정보 입력</legend>
+            <label for="address">주소</label>
+            <input type="text" name="address1">
+        </fieldset>
+        
+        <fieldset>
+            <legend>input type="hidden"</legend>
+            <input type="hidden">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="text"</legend>
+            <input type="text">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="password"</legend>
+            <input type="password">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="search"</legend>
+            <input type="search">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="url"</legend>
+            <input type="url">
+        </fieldset>        
+
+        <fieldset>
+            <legend>input type="email"</legend>
+            <input type="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="tel"</legend>
+            <input type="tel">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="number" min="1" max="100" step="5"</legend>
+            <input type="number" min="1" max="100" step="5">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="range" min="1" max="5" value="1"</legend>
+            <input type="range" min="1" max="5" value="1">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="radio"</legend>
+            <label for="what">what 선택</label>
+            <input type="radio" name="number">남자
+            <input type="radio" name="number" checked="checked">여자
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="checkbox"</legend>
+            <label for="공란">취미 생활요</label>
+            <input type="checkbox">수영
+            <input type="checkbox">당구
+            <input type="checkbox">탁구
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="color"</legend>
+            <input type="color">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="date"</legend>
+            <input type="date">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="month"</legend>
+            <input type="month">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="week"</legend>
+            <input type="week">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="time" min="13:10:20" max="15:10:20" value="13:10:30"</legend>
+            <input type="time" min="13:10:20" max="15:10:20" value="13:10:30">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="datetime-local" min="2024-05-01T01:00" max="2024-05-20T03:00" value="2024-05-05T07:20"</legend>
+            <input type="datetime-local" min="2024-05-01T01:00" max="2024-05-20T03:00" value="2024-05-05T07:20">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="submit" value="버튼이요(지정안하면, '제출' 기본값)"</legend>
+            <input type="submit" value="가입하기,제출하기 등(지정안하면, '제출' 기본값)">
+        </fieldset>
+
+        <fieldset>
+            <legend>input type="reset" value="초기화에요('초기화' 기본값)"</legend>
+            <input type="reset" value="다시작성하기(초기화 기본값)">
+        </fieldset>
+
+        <fieldset>
+            <legend>select - option</legend>
+            <select name="" id="">
+                <option value="">데이터1</option>
+                <option value="">데이터2</option>
+                <option value="">데이터3</option>
+                <option value="">데이터4</option>
+                <option value="">데이터5</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>select multiple(ctrl 다중 선택) - option</legend>
+            <select multiple name="" id="">
+                <option value="">데이터1</option>
+                <option value="">데이터2</option>
+                <option value="">데이터3</option>
+                <option value="">데이터4</option>
+                <option value="">데이터5</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>select multiple(selected) - option</legend>
+            <select multiple name="" id="">
+                <option value="">데이터1</option>
+                <option value="">데이터2</option>
+                <option selected value="">데이터3(selected)</option>
+                <option value="">데이터4</option>
+                <option value="">데이터5</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>textarea name="" id="" cols="50" rows="10"</legend>
+            <legend>css 에서 textarea 태그 지정해서 설정하면 간편함</legend>
+            <label for="textarea">textarea 입니다</label>
+            <textarea name="" id="" cols="50" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>button type="submit">버튼 내용</legend>
+            <button type="submit">버튼 내용</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>button type="reset">버튼 내용</legend>
+            <button type="reset">버튼 내용</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>button type="button">버튼 내용</legend>
+            <button type="button">버튼 내용</button>
+        </fieldset>
+
+        <div style="margin-bottom: 500px;"></div>
+    </form>
+</body>
+</html>

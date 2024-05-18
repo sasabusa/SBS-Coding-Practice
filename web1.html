@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block 요소</title>
+    <style>
+        h1{
+            text-align:center;
+        }
+        h2 > *{
+            background-color:purple;
+        }
+        .block{
+            border:3px solid red;
+            margin:3px;
+            padding:3px;
+        }
+        .inline, .ol, .ul, .dl, .img{
+            border:3px solid red;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+    <h1 style="text-align:center;">Block 요소</h1>
+    <hr style="height:10px; background-color:yellow; border:2px;">
+
+    <h1 style="background-color:blue;">H 태그 - Header-1</h1>
+    <h2>Hearder-2</h2>
+    <h3>Hearder-3</h3>
+    <h4>Hearder-4</h4>
+    <h5>Hearder-5</h5>
+    <h6>Hearder-6</h6>
+
+    <hr style="height:10px; background-color:yellow; border:2px;">
+
+    <h1>p 태그</h1>
+    <p style="background-color:blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi blanditiis optio itaque veniam, earum delectus, totam obcaecati repellat quae laborum tempora illum beatae culpa voluptatum dolore quidem unde iusto vitae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi tempore beatae ut adipisci nulla quia perferendis illum? Recusandae labore quisquam repellendus rem doloremque fugit reiciendis quam dolor dolores hic!</p>
+
+    <hr style="height:10px; background-color:yellow; border:2px;">
+    <h1>br 태그</h1>
+    <p style="background-color:blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi blanditiis optio itaque veniam, earum delectus, totam <br>obcaecati repellat quae laborum tempora illum beatae culpa voluptatum dolore quidem unde iusto vitae.</p>
+
+    <hr style="height:10px; background-color:yellow; border:2px;">
+    <h1>blockquote 태그</h1>
+    <blockquote style="background-color:blue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi blanditiis optio itaque veniam, earum delectus, totam obcaecati repellat quae laborum tempora illum tatum quidem unde iusto vitae.</blockquote>
+
+    <hr style="height:10px; background-color:yellow; border:2px;">
+    <h1>pre 태그</h1>
+    <pre style="background-color:blue;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Eligendi blanditiis optio itaque veniam,
+    earum delectus, totam obcaecati repellat quae laborum tempora illum tatum quidem unde iusto vitae.
+    </pre>
+    <br>
+    <hr style="height:10px; background-color:pink; border:2px;">
+    <hr style="height:10px; background-color:pink; border:2px;">
+    <br>
+</div>
+
+<div class="inline">
+    <h1 style="text-align:center;">Inline 요소</h1>
+    <hr style="height:10px; background-color:yellow; border:2px;">
+
+    <h2>
+        <strong>Strong</strong>
+        <b>b 태그</b>
+        <i>i 태그</i>
+        <em>em 태그</em>
+        <q>q 태그</q>
+        <mark>mark 태그
+            <mark>mark 태그</mark>
+        </mark>
+        <span>span 태그</span>
+        <cite>cite 태그</cite>
+        <code>code 태그</code>
+
+        <!-- 주석 입니다. -->
+        
+    </h2>
+</div>
+
+<div class="ul">
+    <h1>ul 태그</h1>
+    <ul>
+        <li>html 공부</li>
+        <li>css 공부</li>
+        <li>JavaScript 공부</li>
+    </ul>
+</div>
+<div class="ol">
+    <h1>ol 태그</h1>
+    <ol start="4">
+        <li>html 공부</li>
+        <li>css 공부</li>
+        <li>JavaScript 공부</li>
+    </ol>
+</div>
+<div class="dl">
+    <h1>dl, dt, dd 태그</h1>
+    <dl>
+        <dt>자바스크립트</dt>
+        <dt>자바스크립트</dt>
+        <dd>역동적인 프로그램</dd>
+        <dd>역동적인 프로그램</dd>
+        <dd>역동적인 프로그램</dd>
+    </dl>
+    <dl>
+        <dt>자바스크립트</dt>
+        <dt>자바스크립트</dt>
+        <dd>역동적인 프로그램</dd>
+        <dd>역동적인 프로그램</dd>
+        <dd>역동적인 프로그램</dd>
+    </dl>
+</div>
+
+<div class="img">
+    <h1>img 태그</h1>
+    <img src="\HTML5 CSS3(개정1판)_예제(최종)\Section 04\이미지파일\camera01.png" alt="카메라01">
+    <img src="\HTML5 CSS3(개정1판)_예제(최종)\Section 04\이미지파일\camera2.png" alt="카메라02">
+    <img src="\HTML5 CSS3(개정1판)_예제(최종)\Section 04\이미지파일\camera03.png" alt="카메라03" width="200px" height="170px">
+
+    <figure>
+    <figcaption>카메라 태그 사용법</figcaption>
+    <img src="https://www.hanl.tech/wp-content/uploads/2020/08/1-3-1024x250.png" alt="카메라03">
+    <figcaption>카메라 태그 사용법2</figcaption>
+    </figure>
+
+    <img src="" alt="" width="" height="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="href">
+    <h1>href tag</h1>
+    &lt;a href="\url\ab.com" target="_blank" title="링크 이동합니다."></a&gt;
+</div>
+
+<div class="href">
+    <h1>href tag</h1>
+    <a href="\url\ab.com" target="_blank" title="링크 이동합니다."></a>
+</div>
+
+<div>
+    <a href="https://www.naver.com">네이버</a>
+    <a href="https://www.daum.com" target="_self">다음</a>
+    <a href="https://www.google.com" target="_blank" title="이동해요">구글</a>
+</div>
+
+</body>
+</html>
+
+<style>
+    *{margin: 0px; padding: 0px;}
+    body{background-color:black; color:white;}
+    body{font-family:'돋움'; font-size:12px;}
+    body{line-height:30px;}
+    a{text-decoration:none;}
+    a{color:yellow;}
+</style>
+
+<p>
+    편집 <a href="#">포트폴리오</a> 포함 가격
+    <a href="url"></a>
+</p>
+

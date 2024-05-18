@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        li{
+            list-style: none
+        }
+
+        img{
+            display: block;
+            border: none;
+        }
+
+        body{
+            font-family: 'Verdana';
+            font-size: 14px;
+            color: black;
+            line-height: 28px;
+        }
+    </style>
+
+    <style>
+		h1{
+/*			text-align: center;*/
+			width: 800px;
+			margin: 20px auto;
+		}
+        header{
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 10px;
+            border: 2px solid black;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        header h1{
+            width: 200px;
+            line-height: 100px;
+            background-color: yellow;
+            float: left;
+            text-align: center;
+        }
+
+        nav{
+            float: right;
+            overflow: hidden;
+            position: relative;
+        }
+
+        nav ul{
+            overflow: hidden;
+            background-color: antiquewhite;
+        }
+
+        nav ul:nth-of-type(1) li{
+            float: left;
+            padding-left: 20px;
+            background-color: yellow;
+            line-height: 30px;
+        }
+        nav ul:nth-of-type(2) li{
+            float: left;
+            padding-left: 20px;
+            background-color: yellow;
+            line-height: 30px;
+            margin-top: 40px;
+        }
+        
+        #main{
+            width: 1000px;
+            overflow: hidden;
+            margin: 10px auto;
+        }
+
+        #main section{
+            width: 700PX;
+            overflow: hidden;
+            float: left;
+        }
+
+        #main section article{
+            width: 700px;
+            border: 2px solid black;
+            padding: 20px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        article>h2{
+            background-color: antiquewhite;
+        }
+
+        aside{
+            width: 280px;
+            float: right;
+            overflow: hidden;
+            border: 2px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        aside .bannerbox{
+            background-color: gray;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        footer{
+            width: 1000px;
+            height: 50px;
+            line-height: 50px;
+            margin: 10px auto;
+            border: 2px solid black;
+            text-align: center;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>여기 part 중요하네. 레이아웃 잡는 전체를 이해할 수 있음.</h1>
+	<p style="width: 800px; margin-left: 600px;">		h1{<br>
+			text-align: center;<br>
+			width: 300px;<br>
+			margin: 20px auto;  <-- 이 태그 적용 시, width 값 필수 / block 요소는 기본적으로 width 값 100%이기 때문
+	</p>
+    <header>
+        <h1>Web-logo</h1>
+        <nav>
+            <ul>
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+            </ul>
+
+            <ul>
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main">
+        <section>
+            <article>
+                <h2>Main Articles</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur magni quia enim maiores quo ea nobis! Incidunt numquam repellat dolorum exercitationem eius sapiente officia perferendis aliquam repudiandae? Sunt, aliquid corporis!</p>
+            </article>
+            <article>
+                <h2>Main Articles</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur magni quia enim maiores quo ea nobis! Incidunt numquam repellat dolorum exercitationem eius sapiente officia perferendis aliquam repudiandae? Sunt, aliquid corporis!</p>
+            </article>
+            <article>
+                <h2>Main Articles</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur magni quia enim maiores quo ea nobis! Incidunt numquam repellat dolorum exercitationem eius sapiente officia perferendis aliquam repudiandae? Sunt, aliquid corporis!</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Right aside</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci itaque eveniet repudiandae, quibusdam id dolorum inventore eum tempora, numquam aperiam hic quaerat temporibus esse suscipit laboriosam quisquam quod labore necessitatibus?</p>
+            <label for="email">Mail</label>
+            <input type="email">
+            <button>mailto</button>
+            <div class="bannerbox">
+                <h2>text</h2>
+                <p>banner</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>HTML5 COPYRIGHT</p>
+    </footer>
+</body>
+</html>

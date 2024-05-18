@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-1 overflow: hidden</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        }
+        .contents1{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+
+        }
+        .contents2{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+
+        }
+        .contents3{
+            width: 200px;
+            /* height: 200px; 높이 지정 안함*/
+            /* overflow: hidden; */
+            overflow: visible;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+        .contents4{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            margin-left: 30px;
+        }
+    </style>
+    <style>
+        .scrollbox1{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            overflow: scroll;
+        }
+        .scrollbox2{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .scrollbox3{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+    <style>
+        .bullet_circle{
+            list-style: circle;
+        }
+        .bullet_none{
+            list-style: none;
+        }
+    </style>
+    <style>
+        .style_num01{
+            list-style-type: lower-alpha;
+        }
+        .style_num02{
+            list-style-type: upper-latin;
+        }
+    </style>
+    <style>
+        .style_number01{
+            list-style-type: lower-alpha;
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <h1>overflow: hidden 속성</h1>
+    <div>
+        <div class="contents1">
+            <h4>콘텐츠 양이 일정</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed, ipsum nam, eveniet porro quos, quae corporis fugit ut distinctio tenetur veritatis magni possimus eligendi iste corrupti similique reprehenderit quibusdam?</p>
+        </div>
+        <div class="contents2">
+            <h4>콘텐츠 양이 많거나 유동적일 때 흘러 넘침</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed, ipsum nam, eveniet porro quos, quae corporis fugit ut distinctio tenetur veritatis magni possimus eligendi iste corrupti similique reprehenderit quibusdam?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed, ipsum nam, eveniet porro quos, quae corporis fugit ut distinctio tenetur veritatis magni possimus eligendi iste corrupti similique reprehenderit quibusdam?</p>
+        </div>
+        <div class="contents3">
+            <h4>콘텐츠 양에 따라서 높이가 늘어남</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed, ipsum nam, eveniet porro quos, quae corporis fugit ut distinctio tenetur veritatis magni possimus eligendi iste corrupti similique reprehenderit quibusdam?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed, ipsum nam, eveniet porro quos, quae corporis fugit ut distinctio tenetur veritatis magni possimus eligendi iste corrupti similique reprehenderit quibusdam?</p>
+        </div>
+        <div class="contents4">
+            <h4>박스의 지정된 높이만큼만 콘텐츠가 보임</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed, ipsum nam, eveniet porro quos, quae corporis fugit ut distinctio tenetur veritatis magni possimus eligendi iste corrupti similique reprehenderit quibusdam?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed, ipsum nam, eveniet porro quos, quae corporis fugit ut distinctio tenetur veritatis magni possimus eligendi iste corrupti similique reprehenderit quibusdam?</p>
+        </div>
+    </div>
+    <br>
+    <div style="margin-top: 400px; clear: both;"></div>
+    <h1>overflow: scroll</h1>
+    <div class="scrollbox1">
+        <h4>scroll-x,y</h4>
+        <p><img src="img\camera02.png" width="200px" alt=""></p>
+    </div>
+    <div class="scrollbox2">
+        <h4>scroll-x</h4>
+        <p><img src="img\camera02.png" width="200px" alt=""></p>
+    </div>
+    <div class="scrollbox3">
+        <h4>scroll-y</h4>
+        <p><img src="img\camera02.png" width="200px" alt=""></p>
+    </div>
+    <div style="margin-top: 250px; clear: both;"></div>
+    <h1>목록 스타일 속성</h1>
+    <div style="margin-left: 100px;">
+    <h2>블릿(ul) 변경</h2>
+        <ul class="bullet_circle_original">
+            <h3>오리지널(적용 전)</h3>
+            <li>회사소개</li>
+            <li>생산설비</li>
+            <li>제품소개</li>
+            <li>온라인문의</li>
+            <li>커뮤니티</li>
+        </ul>
+        <br>
+        <ul class="bullet_circle">
+            <h3>적용 후</h3>
+
+            <li>회사소개</li>
+            <li>생산설비</li>
+            <li>제품소개</li>
+            <li>온라인문의</li>
+            <li>커뮤니티</li>
+        </ul>
+        <br>
+        <h2>블릿(ul) 없애기(적용 전)</h2>
+        <ul class="bullet_none_original">
+            <h3>오리지널</h3>
+            <li>회사소개</li>
+            <li>생산설비</li>
+            <li>제품소개</li>
+            <li>온라인문의</li>
+            <li>커뮤니티</li>
+        </ul>
+        <br> 
+        <ul class="bullet_none">
+            <h3>적용 후</h3>
+
+            <li>회사소개</li>
+            <li>생산설비</li>
+            <li>제품소개</li>
+            <li>온라인문의</li>
+            <li>커뮤니티</li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+    <div style="margin-left: 100px;">
+    <h2>순서(ol)가 있는 모양 스타일</h2>
+        <ol class="style_num00">
+            <h3>오리지널(적용 전)</h3>
+            <li>회사소개</li>
+            <li>생산설비</li>
+            <li>제품소개</li>
+            <li>온라인문의</li>
+            <li>커뮤니티</li>
+        </ol>
+        <br>
+        <ol class="style_num01">
+            <h3>(적용 1_lower-alpha)</h3>
+            <li>회사소개</li>
+            <li>생산설비</li>
+            <li>제품소개</li>
+            <li>온라인문의</li>
+            <li>커뮤니티</li>
+        </ol>
+        <br>
+        <ol class="style_num02">
+            <h3>(적용 2_upper-alpha)</h3>
+            <li>회사소개</li>
+            <li>생산설비</li>
+            <li>제품소개</li>
+            <li>온라인문의</li>
+            <li>커뮤니티</li>
+        </ol>
+        <br>
+    </div>
+    <div style="margin-top: 100px; clear: both;"></div>
+    <ol class="style_number00">
+        <h3>(적용 전_inside, outside) 모든 요소 *margin, padding 0 값으로 인해 안보임</h3>
+        <li>회사소개</li>
+        <li>생산설비</li>
+        <li>제품소개</li>
+        <li>온라인문의</li>
+        <li>커뮤니티</li>
+    </ol>
+    <ol class="style_number01">
+        <h3>(적용 후)_inside, outside</h3>
+        <li>회사소개</li>
+        <li>생산설비</li>
+        <li>제품소개</li>
+        <li>온라인문의</li>
+        <li>커뮤니티</li>
+    </ol>
+    <div style="margin-top: 400px; clear: both;"></div>
+</body>
+</html>

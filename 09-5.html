@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-5 후손 선택자와 자손 선택자</title>
+    <style>
+        div>h1{
+            background-color: blue;
+        }
+        div h1{
+            color: red;
+        }
+        div span{
+            background-color: yellow;
+        }
+        div>span{
+            border: 4px solid orange;
+        }
+    </style>
+
+    <style>
+        input[type=text]{
+            background-color: red;
+        }
+        input[type=password]{
+            background-color: blue;
+        }
+    </style>
+
+    <style>
+        h1 + h2{
+            color: red;
+        }
+        h1 ~ h2{
+            background-color: orange;
+        }
+    </style>
+
+    <style>
+        h3:hover{
+            color: red;
+        }
+        h4:active{
+            color: blue;
+            background-color: orange;
+        }
+    </style>
+
+    <style>
+        ul{
+            overflow: hidden;
+        }
+        li{
+            list-style: none;
+            float: left;
+            padding: 15px;
+            background: gray;
+        }
+        li:nth-child(2n){
+            background: blue;
+            color: pink;
+        }
+        li:nth-child(2n+1){
+            background: black;
+            color: white;
+        }
+        li:first-child{
+            background: red;
+            color: #ffd800;
+        }
+        li:last-child{
+            background: yellow;
+            color: green;
+        }
+    </style>
+
+    <style>
+        h6:first-of-type{
+            color: red;
+        }
+        h5:last-of-type{
+            color:white;
+            background: blue;
+        }
+    </style>
+
+    <style>
+        input:enabled{
+            background: blue;
+            color: white;
+        }
+        input:disabled{
+            background: black;
+        }
+        input:focus{
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>제목1(h1)</h1>
+        <h2>제목2</h2>
+        <div>
+            <h1>hahaha(h1)</h1>
+            <ul>
+                <li>menu1</li>
+                <h1>h1 태그에요(div 태그의 2계단 아래)</h1>
+                <li>menu2</li>
+                <li><span>menu3(div 태그의 4계단 아래, span)</span></li>
+            </ul>
+        </div>
+        <h2>제목2</h2>
+        <span>Span(div 태그의 1계단 아래)</span>
+    </div>
+    <hr>
+    <div style="margin: 100px;"></div>
+    <hr>
+    <h1>속성 선택자<br>선택자[속성=값]<br>
+        input[type=text]</h1>
+    <form>
+        <input type="text" />
+        <input type="password" />
+    </form>
+    <hr>
+    <div style="margin: 100px;"></div>
+    <hr>
+    <h1>동위 선택자</h1>
+    <h1>제목1</h1>
+    <h2>제목2(h1 + h2) 바로 뒤</h2>
+    <h2>제목2(h1 ~ h2) 뒤에 있는 모든</h2>
+    <h2>제목2</h2>
+    <h2>제목2</h2>
+    <h2>제목2</h2>
+    <hr>
+    <div style="margin: 100px;"></div>
+    <hr>
+    <h1>반응 선택자</h1>
+    <h3>제목3(h3:hover)</h3>
+    <h4>제목4(h4:active)</h4>
+    <h4>제목4</h4>
+    <h4>제목4</h4>
+    <hr>
+    <div style="margin: 100px;"></div>
+    <hr>
+    <h1>구조 선택자<br>
+    li:first-child / li:last-child<br>
+    li:nth-child(2n) or 2n+1
+    </h1>
+    <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+    </ul>
+    <hr>
+    <div style="margin: 100px;"></div>
+    <hr>
+    <h4>Header-4</h4>
+    <h5>Header-5</h5>
+    <h6>Header-6(h6:first-of-type)</h6>
+    <h6>Header-6</h6>
+    <h5>Header-5</h5>
+    <h4>Header-4</h4>
+
+    <hr>
+    <div style="margin: 100px;"></div>
+    <hr>
+
+    <h1>상태 선택자(input:enabled / input:focus)</h1>
+    <h1>enabled</h1>
+    <p>
+        <input type="text">
+    </p>
+
+    <h1>disabled</h1>
+    <p>입력할 수 없는 상태로 만들기
+        <input disabled="disabled" />
+    </p>
+
+</body>
+</html>

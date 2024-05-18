@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 표 스타일 만들기</title>
+    <style>
+        table{
+            border: 2px solid black;
+        }
+        td{
+            border: 1PX dotted black;
+            padding: 15px;
+            text-align: center;
+        }
+        .table{
+            border: 2px solid red;
+            border-collapse: collapse;
+        }
+        .table td{
+            border: 1px dotted black;
+            padding: 25px;
+            text-align: center;
+        }
+        .table2{
+            border: 2px solid red;
+            border-spacing: 40px 20px;
+        }
+        .table2 td{
+            border: 1px dotted black;
+            padding: 15px;
+            text-align: center;
+        }
+        .table3{
+            border: 2px solid red;
+            border-spacing: 10px;
+            empty-cells: hide;
+        }
+        .table3 td{
+            border: 1px dotted black;
+            padding: 15px;
+            text-align: center;
+        }
+        .table4{
+            border: 2px solid red;
+            border-spacing: 10px;
+            empty-cells: show;
+            width: 600px;
+            /* height: 200px; */
+        }
+        .table4 td{
+            border: 1px dotted black;
+            padding: 15px;
+            text-align: center;
+            /* width: 600px; */
+            height: 100px;
+        }
+        .table6{
+            border: 2px solid red;
+            empty-cells: show;
+            width: 600px;
+            table-layout: fixed;
+        }
+        .table6 td{
+            border: 1px dotted black;
+            padding: 15px;
+            width: 10px;
+            text-align: center;
+        }
+        .table7{
+            border: 2px solid red;
+            empty-cells: show;
+            width: 600px;
+            table-layout: fixed;
+            word-break: break-all;
+        }
+        .table7 td{
+            border: 1px dotted black;
+            padding: 15px;
+            width: 10px;
+            text-align: center;
+        }
+        .table8{
+            border: 2px solid red;
+            width: 700px;
+        }
+        .table8 td{
+            border: 1px dotted black;
+            background-color: gray;
+            padding: 15px;
+            height: 100px;
+            text-align: center;
+            width: 200px;
+        }
+       .cell1{
+        vertical-align: baseline;
+       }
+       .cell2{
+        vertical-align: top;
+       }
+       .cell3{
+        vertical-align: middle;
+       }
+       .cell4{
+        vertical-align: bottom;
+       }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>표 스타일</caption>
+        <tr>
+            <td>시네마 천국</td>
+            <td>벤허</td>
+        </tr>
+        <tr>
+            <td>11:00 ~ 14:30</td>
+            <td>16:00 ~ 19:00</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="table">
+        <caption>표 스타일(border-collapse)</caption>
+        <tr>
+            <td>시네마 천국</td>
+            <td>벤허</td>
+        </tr>
+        <tr>
+            <td>11:00 ~ 14:30</td>
+            <td>16:00 ~ 19:00</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="table2">
+        <caption>표 스타일(border-spacing)</caption>
+        <tr>
+            <td>시네마 천국</td>
+            <td>벤허</td>
+        </tr>
+        <tr>
+            <td>11:00 ~ 14:30</td>
+            <td>16:00 ~ 19:00</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="table3">
+        <caption>표 스타일(empty-cells)</caption>
+        <tr>
+            <td>시네마 천국</td>
+            <td>벤허</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>11:00 ~ 14:30</td>
+            <td>16:00 ~ 19:00</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="table4">
+        <caption>표 스타일(width, height)</caption>
+        <tr>
+            <td>시네마 천국</td>
+            <td>벤허</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>11:00 ~ 14:30</td>
+            <td>16:00 ~ 19:00</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="table5">
+        <caption>표 스타일(table-layout:auto; 기본값)</caption>
+        <tr>
+            <td>시네마 천국</td>
+            <td>벤허</td>
+            <td>redfredfwejiorfjrewoirdjweiorjdoiwrjdoiwerjdoiwjroiwerjoiwe</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>11:00 ~ 14:30</td>
+            <td>16:00 ~ 19:00</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="table6">
+        <caption>표 스타일(table-layout:fixed;)</caption>
+        <tr>
+            <td>시네마 천국</td>
+            <td>벤허</td>
+            <td>redfredfwejiorfjrewoirdjweiorjdoiwrjdoiwerjdoiwjroiwerjoiwe</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>11:00 ~ 14:30</td>
+            <td>16:00 ~ 19:00</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="table7">
+        <caption>표 스타일(word-break: break-all;)</caption>
+        <tr>
+            <td>시네마 천국</td>
+            <td>벤허</td>
+            <td>redfredfwejiorfjrewoirdjweiorjdoiwrjdoiwerjdoiwjroiwerjoiwe</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>11:00 ~ 14:30</td>
+            <td>16:00 ~ 19:00</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table class="table8">
+        <caption>셀 수직 정렬(vertical-align:)</caption>
+        <tr>
+            <td class="cell1">baseline</td>
+            <td class="cell2">top</td>
+            <td class="cell3">middle</td>
+            <td class="cell4">bottom</td>
+        </tr>
+    </table>
+</body>
+</html>

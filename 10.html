@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 배경 이미지오 다양한 색상 표현</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .img1{
+        width: 1400px;
+        height: 1400px;
+        background-color: cadetblue;
+        background-image: url(/img/cat_bg.png);
+    }
+    .img2{
+        width: 1400px;
+        height: 1400px;
+        background-color: cadetblue;
+        background-image: url(/img/cat_bg.png), url(/img/land.png);
+    }
+    .img3{
+        width: 1400px;
+        height: 1400px;
+        background-color: gray;
+        background-image: url(/img/art.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .img4{
+        width: 1400px;
+        height: 1400px;
+        background-color: gray;
+        background-image: url(/img/art.jpg);
+        background-size: 100% 500px;
+        background-repeat: no-repeat;
+    }
+    .img5{
+        background-image: url(/img/art.jpg);
+        background-size: 100%
+
+        background-repeat: no-repeat;
+        height: 3000px;
+        background-attachment: fixed;
+    }
+    .img6{
+        background-image: url(/img/art.jpg);
+        background-size: 100%
+
+        background-repeat: no-repeat;
+        height: 3000px;
+        background-attachment: scroll;
+    }
+</style>
+<body>
+    <h1>이미지 1장 - background-image: url(/img/cat_bg.png)<h1>
+    <div class="img1">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>이미지 2장 - background-image: url(/img/cat_bg.png), url(/img/land.png)<h1>
+    <div class="img2">
+    </div>
+  
+    <br>
+    <hr>
+    <br>
+    <h1>background-size: 100%;(가로 기준으로 100% 맞춰짐)<h1>
+    <div class="img3">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>background-size: 100% 500px;(가로 100% 세로 500px)<h1>
+    <div class="img4">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1>높이 지정(height: 3000px;)/background-attachment: fixed;<h1>
+    <div class="img5">
+    </div>
+   
+    <br>
+    <hr>
+    <br>
+
+    <h1>높이 지정(height: 3000px;)/background-attachment: scroll;<h1>
+    <div class="img6">
+    </div>
+   
+    <br>
+    <hr>
+    <br>
+
+</body>
+</html>
