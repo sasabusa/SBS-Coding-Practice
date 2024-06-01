@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        li{
+            list-style:none;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            display: block;
+            border: none;
+        }
+        body{
+            font-size: 14px;
+            line-height: 26px;
+            color: #434343;
+            font-family: '맑은고딕','Arial';
+        }
+
+        header{
+            width: 100%;
+            height: 90px;
+            position: relative;
+            overflow: hidden;
+            background-color: #1e172a;
+        }
+
+        #top{
+            width: 1200px;
+            height: 90px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        #top>.logo{
+            width: 120px;
+            height: 60px;
+            display: block;
+            float: left;
+            margin-top: 15px;
+            background-image: url("../img/logo_1200.png");
+            background-size: 100%;
+            font-size: 0;
+        }
+
+        #top>ul{
+            display: inline-block;
+            overflow: hidden;
+            margin-top: 30px;
+        }
+
+        #top>ul>li{
+            float: left;
+            line-height: 30px;
+            font-size: 20px;
+        }
+
+        #top>ul>li>a{
+            color: #d4d0dc;
+            font-weight: 600;
+            display: block;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #top>ul>li>a:hover{
+            color: orange;
+        }
+
+        #top select{
+            float: right;
+            display: block;
+            height: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            box-sizing: border-box;
+            margin-top: 30px;
+        }
+
+        #main{
+            position: relative;
+            background-image: url(../img/img001.png);
+            background-size: cover;
+            background-position: center;
+
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+
+            overflow: hidden;
+        }
+
+        #main>h1{
+            width: 390px;
+            overflow: hidden;
+            margin: 80px auto;
+        }
+
+        #main>div{
+            width: 960px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+
+        #main>div a{
+            float: left;
+            width: 160px;
+            height: 80px;
+            background-color: blueviolet;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            background-color: rgba(17, 145, 208, 0.9);
+        }
+
+        #main>div a:first-child{
+            background-color: rgba(245, 130, 31, 0.9);
+        }
+
+        #main>div a:last-child{
+            background-color: rgba(77, 184, 72, 0.9);
+        }
+
+        #main>div a>img{
+            margin: 0 auto;
+        }
+
+        #main>div a>span{
+            position: absolute;
+            bottom: 30px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            color: lightgrey;
+        }
+
+        #main>div a:hover span{
+            color: white;
+            font-weight: 800;
+        }
+
+        #contents{
+            width: 1140px;
+            overflow: hidden;
+            position:relative;
+            margin: 40px auto;
+        }
+
+        #contents>div{
+            width: 360px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+        }
+
+        #contents div h2{
+            font-weight: 100;
+            line-height: 42px;
+            overflow: hidden;
+            box-sizing: border-box;
+            height: 42px;
+        }
+
+        #contents div:nth-child(2) h2{
+            border-bottom: 2px solid black;
+        }
+
+        #contents div:nth-child(6) h2{
+            border-bottom: 2px solid black;
+        }
+
+        #contents .more{
+            position: absolute;
+            right: 10px;
+            top: 14px;
+        }
+
+        #contents>div p{
+            overflow: hidden;
+            letter-spacing: -1px;
+            line-height: 38px;
+        }
+
+        #contents>div:last-child p{
+            padding-top:10px;
+        }
+
+        #contents>div p a{
+            color: #434343;
+            display: block;
+            float: left;
+            font-size: 15x;
+        }
+
+        #contents>div p span{
+            font-size: 10px;
+            font-family: verdana;
+            display: block;
+            float: right;
+            color: lightgray;
+        }
+
+        footer{
+            width: 100%;
+            height: 90px;
+            background-color: #28282a;
+            overflow: hidden;
+            position: relative;
+        }
+
+        footer>div{
+            width: 1200px;
+            height: 90px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        footer>div>img{
+            float: left;
+            margin-top: 35px;
+        }
+
+        footer>div>p{
+            float: left;
+            line-height: 24px;
+            margin-top: 24px;
+            margin-left: 32px;
+            color: #b9b9b9;
+        }
+
+        footer p>a{
+            color: #b9b9b9;
+        }
+
+        footer p>span{
+            color: #69696b;
+            font-size: 11px;
+        }
+        
+        footer>div>div{
+            float: right;
+            margin-top: 28px;
+        }
+
+        footer>div>div>img{
+            float: left;
+        }
+
+        footer>div>div>select{
+            display: block;
+            float: left;
+            height: 40px;
+            background-color: #242426;
+            color: white;
+            padding-left: 10px;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <a href="#" class="logo">야구발전전시관</a>
+
+            <ul>
+                <li><a href="#">관람</a></li>
+                <li><a href="#">전시</a></li>
+                <li><a href="#">교육</a></li>
+                <li><a href="#">체험</a></li>
+                <li><a href="#">소식</a></li>
+                <li><a href="#">참여</a></li>
+                <li><a href="#">전시관 소개</a></li>
+            </ul>
+
+            <select>
+                <option>Language</option>
+                <option>ENGLISH</option>
+                <option>한국어</option>
+            </select>
+
+        </div>
+    </header>
+
+    <div id="main">
+        <h1><img src="../img/visual_text.png" alt=""></h1>
+
+        <div>
+            <a href="#"><img src="../img/quick0_on.png" alt=""><span>위치/교통편</span></a>
+            <a href="#"><img src="../img/quick1_on.png" alt=""><span>층별안내</span></a>
+            <a href="#"><img src="../img/quick2_on.png" alt=""><span>편의시설</span></a>
+            <a href="#"><img src="../img/quick3_on.png" alt=""><span>단체관람</span></a>
+            <a href="#"><img src="../img/quick4_on.png" alt=""><span>장애인관람</span></a>
+            <a href="#"><img src="../img/quick5_on.png" alt=""><span>문의하기</span></a>
+        </div>
+
+    </div>
+
+    <div id="contents">
+        <div>
+            <h2>사이버체험</h2>
+            <a href="#">
+                <img src="../img/img6.png" alt="">
+            </a>
+        </div>
+
+        <div>
+            <h2>운영시간</h2>
+            <a href="#">
+                <img src="../img/img9.png" alt="">
+            </a>
+        </div>
+
+        <div>
+            <h2>교육프로그램</h2>
+            <a href="#">
+                <img src="../img/img5.png" alt="">
+            </a>
+            <a href="#" class="more">
+                <img src="../img/btn_more.png" alt="">
+            </a>
+        </div>
+
+        <div>
+            <h2>홍보영상</h2>
+            <a href="#">
+                <img src="../img/img7.png" alt="">
+            </a>
+        </div>
+
+        <div>
+            <h2>문화행사</h2>
+            <a href="#">
+                <img src="../img/img8.png" alt="">
+            </a>
+            <a href="#" class="more">
+                <img src="../img/btn_more.png" alt="">
+            </a>
+        </div>
+
+        <div>
+            <h2>전시관소식</h2>
+            <p>
+                <a href="#">[공지] 야구발전전시관 개관 및 휴관일정 안내</a>
+                <span>2019.04.22</span>
+                <br>
+                <a href="#">[행사안내] 3월, 4월 스포츠 공연 전시관에 봄이</a>
+                <span>2019.04.22</span>
+                <br>
+                <a href="#">[교육] 봄방학 어린이 야구교실 프로그램</a>
+                <span>2019.04.22</span>
+                <br>
+                <a href="#">[자료구매] 2018년 제3차 검정체험관 예정 자료</a>
+                <span>2019.04.22</span>
+                <br>
+                <a href="#">[이벤트 종료] 야구발전 전시관 전시관람 후기</a>
+                <span>2019.04.22</span>
+                <br>
+                <a href="#">[자료구매] 2018년 야구발전전시관 기념 구매</a>
+                <span>2019.04.22</span>
+                <br>
+            </p>
+            <a href="#" class="more">
+                <img src="../img/btn_more.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <img src="../img/footer_logo.png" alt="">
+            <p>
+                서울시 서초구 서초대로77길 3 / 대표전화 02-530-8556 <a href="#">개인정보처리방침</a>
+                <br>
+                <span>Copyright c 야구발전전시관</span>
+            </p>
+
+            <div>
+                <img src="../img/icon_f.png" alt="">
+                <img src="../img/icon_b.png" alt="">
+                <select>
+                    <option>관련사이트</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
