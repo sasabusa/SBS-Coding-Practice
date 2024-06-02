@@ -271,6 +271,83 @@
             padding-left: 10px;
             padding-right: 30px;
         }
+
+        @media screen and (max-width: 960px){
+            #top{
+                width: 100%;
+                transition-duration: 0.7s;
+            }
+            #top>.logo{
+            margin: 0 auto;
+            float: none;
+            margin-top: 15px;
+            }
+            #top>ul{
+                display: none;
+            }
+            #top>select{
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 960px) {
+            #main>div{
+                width: 50.52%;
+                transition-duration: 0.7s;
+            }
+            #main>div a{
+                float: left;
+                width: 33.33%;
+            }
+        }
+
+        @media screen and (max-width: 960px) {
+            #contents{
+                width: 80%;
+                transition: 0.7s;
+            }
+            #contents>div{
+                width: 48%;
+                margin: 0;
+                margin-left: 1%;
+                margin-right: 1%;
+            }
+
+            #contents>div p{
+            }
+            #contents>div p a{
+                font-size: 12px;
+                /* white-space: nowrap; */
+                line-height: 20px; /* 이 부분 추가함*/
+            }
+            #contents>div p span{
+                margin-top: -30px; /* 이 부분 추가함 */
+                font-size: 12px;
+                margin-right: 10px;
+            }
+            #contents>div img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width:960px) {
+            footer>div{
+                width: 100%;
+                text-align: center;
+                transition-duration: 0.7s;
+            }
+            footer>div>img{
+                display: none;
+            }
+            footer>div>p{
+                float: none;
+                font-size: 13px; /* 이 부분 추가 했음.*/
+            }
+            footer>div>div{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
